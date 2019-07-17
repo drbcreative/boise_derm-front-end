@@ -16,7 +16,34 @@ section {
 /* -------------------------------------------------------------------------- */
 /* HERO SECTION */
 /* -------------------------------------------------------------------------- */
-.hero {}
+.hero {
+  background: url('../../img/hero@2x.jpg') center / cover;
+  padding: 20px 20px;
+  min-height: 75vh;
+  max-height: 740px;
+  // background: red;
+  height: inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba($color-dark, .8);
+  }
+
+  .section-info {
+    text-align: center;
+    z-index: 2;
+  }
+}
 
 /* -------------------------------------------------------------------------- */
 /* SEARCH SECTION */

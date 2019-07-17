@@ -23,9 +23,10 @@ h5 h6 {
 h1 {
   //Not used on this project
   font-family: $font-secondary;
-  font-size: 3.125; // 50px
-  line-height: 3.125;
+  font-size: 3.125rem; // 50px
+  line-height: 3.125rem;
   font-weight: 300;
+  font-variant-caps: all-petite-caps;
 
   &.is-bold {
     font-weight: 700;
@@ -38,8 +39,8 @@ h1 {
 
 h2 {
   font-family: $font-secondary;
-  font-size: 2.813emrem; // 45px
-  line-height: 2.813emrem;
+  font-size: 2.813rem; // 45px
+  line-height: 2.813rem;
   font-weight: 400;
 
   &.is-italic {
@@ -49,8 +50,8 @@ h2 {
 
 h3 {
   font-family: $font-secondary;
-  font-size: 2.188emrem; // 35px
-  line-height: 2.188emrem;
+  font-size: 2.188rem; // 35px
+  line-height: 2.188rem;
   font-weight: 500;
 }
 
