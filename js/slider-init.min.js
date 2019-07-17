@@ -1,0 +1,1 @@
+$(document).ready(function(){$(".hero").slick({slidesToShow:1,slidesToScroll:1,infinite:!0,dots:!0,autoplay:!0,arrows:!1,autoplaySpeed:5e3})});

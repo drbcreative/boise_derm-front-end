@@ -1,0 +1,120 @@
+/* -------------------------------------------------------------------------- */
+/* FOOTER */
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+/* FOOTER 1 SECTION */
+/* -------------------------------------------------------------------------- */
+.footer1 {
+  min-height: 300px;
+
+  .footer-link {
+    color: $color-dark-accent;
+    font-family: $font-primary;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 20px;
+
+    &:hover {
+      text-decoration: none;
+      color: $color-main;
+    }
+  }
+  .footer-header {
+    margin-top: 0 !important;
+  }
+
+  .containerish {
+    display: grid;
+
+    .footer-left {
+      background: $color-white;
+      padding: 40px 20px;
+
+      .footer-header {
+        margin-bottom: 2rem !important;
+      }
+
+      .ui-btn {
+        display: inline-block;
+        width: auto;
+        padding: 0.2rem 1rem;
+        margin-bottom: 0 !important;
+        vertical-align: middle;
+      }
+    }
+    .footer-right {
+      background: url("../img/footer-right-bg@2x.jpg") center / cover;
+      padding: 40px 20px;
+      display: grid;
+
+      .footer-header {
+        margin-bottom: 2rem !important;
+      }
+
+      .right-left {
+        margin-bottom: 2rem;
+      }
+      .right-right {
+        ul {
+          padding: 0;
+          list-style-type: none;
+
+          li:not(:last-child) {
+            line-height: 40px !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* -------------------------------------------------------------------------- */
+/* FOOTER 2 SECTION */
+/* -------------------------------------------------------------------------- */
+.footer2 {
+  background-color: $color-dark-accent;
+  width: 100%;
+  padding: 0.6rem 30px;
+
+  .containerish {
+    max-width: 100%;
+    padding: 0 0.2rem;
+    display: grid;
+
+    .foot-left {
+      display: flex;
+      align-items: center;
+
+      p {
+        display: inline-block;
+      }
+    }
+
+    .social-link {
+      color: $color-white;
+      margin-right: 0.5rem;
+
+      &:hover {
+        text-decoration: none;
+        color: $color-dark;
+      }
+    }
+    .social-link:last-child {
+      margin-right: 0;
+    }
+
+    .footer-link {
+      color: $color-white;
+      font-family: $font-primary;
+      font-size: 15px;
+      line-height: 20px;
+      font-weight: 300;
+      display: inline-block;
+
+      &:hover {
+        text-decoration: none;
+        color: $color-dark;
+      }
+    }
+  }
+}
