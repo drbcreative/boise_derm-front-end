@@ -147,6 +147,29 @@ section {
 /* -------------------------------------------------------------------------- */
 /* EVENT SECTION */
 /* -------------------------------------------------------------------------- */
+.event {
+  .containerish {
+    display: grid;
+
+    .col-left {
+      height: 50vh;
+      background: url('../../img/event-img@2x.jpg') center / cover;
+      position: relative;
+
+      img {
+        object-fit: cover;
+      }
+    }
+
+    .col-right {
+      background: url('../../img/event-face-bg@2x.jpg') center / cover;
+      padding: 20px 20px;
+      text-align: center;
+      display: flex;
+      align-items: center;
+    }
+  }
+}
 
 /* -------------------------------------------------------------------------- */
 /* BOTOX SECTION */

@@ -219,6 +219,32 @@
   }
 
   /* EVENT ****************************************************************** */
+  .event {
+    background: $color-light;
+    padding: 40px 0;
+
+    .containerish {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+
+      .col-left {
+        height: 50vh;
+        background: url('../../img/event-img@2x.jpg') center / cover;
+        position: relative;
+
+        img {
+          object-fit: cover;
+        }
+      }
+
+      .col-right {
+        background: url('../../img/event-face-bg@2x.jpg') center / cover;
+        text-align: left;
+        padding-left: 2rem;
+      }
+    }
+  }
+
   /* BOTOX  ***************************************************************** */
   /* FILLERS  *************************************************************** */
   /* SKIN CARE FOR EVERY AGE ************************************************ */
@@ -351,6 +377,28 @@
   }
 
   /* EVENT ****************************************************************** */
+  .event {
+    .containerish {
+      display: grid;
+
+      .col-left {
+        height: 50vh;
+        background: url('../../img/event-img@2x.jpg') center / cover;
+        position: relative;
+
+        img {
+          object-fit: cover;
+        }
+      }
+
+      .col-right {
+        background: url('../../img/event-face-bg@2x.jpg') center / cover;
+        padding: 2rem 4rem;
+
+      }
+    }
+  }
+
   /* BOTOX  ***************************************************************** */
   /* FILLERS  *************************************************************** */
   /* SKIN CARE FOR EVERY AGE ************************************************ */
@@ -371,6 +419,28 @@
   /* SEARCH ***************************************************************** */
   /* MEDICAL DERM AND AESTHETICS ******************************************** */
   /* EVENT ****************************************************************** */
+  .event {
+    .containerish {
+      display: grid;
+
+      .col-left {
+        height: 40vh;
+        background: url('../../img/event-img@2x.jpg') center / cover;
+        position: relative;
+
+        img {
+          object-fit: cover;
+        }
+      }
+
+      .col-right {
+        background: url('../../img/event-face-bg@2x.jpg') center / cover;
+        padding: 2rem 4rem;
+
+      }
+    }
+  }
+
   /* BOTOX  ***************************************************************** */
   /* FILLERS  *************************************************************** */
   /* SKIN CARE FOR EVERY AGE ************************************************ */
