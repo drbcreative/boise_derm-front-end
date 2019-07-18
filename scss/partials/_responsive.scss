@@ -60,6 +60,63 @@
 
   /* SEARCH ***************************************************************** */
   /* MEDICAL DERM AND AESTHETICS ******************************************** */
+  .medical-derm-aesthetics {
+    position: relative;
+
+    .containerish {
+      display: grid;
+
+      .section-info {
+
+        .header-box {
+          border: 1px solid white;
+          padding: .5rem;
+          margin-bottom: 1rem;
+
+          h3 {
+            font-size: 218.75%;
+            text-align: center;
+          }
+        }
+      }
+
+      .col-left {
+        position: relative;
+
+        img {
+          object-fit: cover;
+        }
+
+        .section-info {
+          bottom: 10%;
+          flex: 1;
+        }
+      }
+
+      .col-right {
+        position: relative;
+
+        img {
+          object-fit: cover;
+        }
+
+        .section-info {
+          bottom: 5%;
+          flex: 1;
+        }
+      }
+    }
+
+    .medical-circle {
+      width: 126px;
+      height: 126px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+
   /* EVENT ****************************************************************** */
   /* BOTOX  ***************************************************************** */
   /* FILLERS  *************************************************************** */
@@ -137,6 +194,30 @@
   }
 
   /* MEDICAL DERM AND AESTHETICS ******************************************** */
+  .medical-derm-aesthetics {
+    .containerish {
+      grid-template-columns: 1fr 1fr;
+
+      .section-info {
+        .header-box {
+          padding: .5rem .5rem .9rem .5rem;
+        }
+      }
+
+      .col-left {
+        .section-info {
+          bottom: 5%;
+        }
+      }
+
+      .col-right {
+        .section-info {
+          bottom: 5%;
+        }
+      }
+    }
+  }
+
   /* EVENT ****************************************************************** */
   /* BOTOX  ***************************************************************** */
   /* FILLERS  *************************************************************** */
@@ -265,6 +346,10 @@
 
   /* SEARCH ***************************************************************** */
   /* MEDICAL DERM AND AESTHETICS ******************************************** */
+  .medical-derm-aesthetics {
+    padding: 3rem 0;
+  }
+
   /* EVENT ****************************************************************** */
   /* BOTOX  ***************************************************************** */
   /* FILLERS  *************************************************************** */

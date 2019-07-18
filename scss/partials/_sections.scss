@@ -75,6 +75,74 @@ section {
 /* -------------------------------------------------------------------------- */
 /* MEDICAL DERM AND AESTHETICS */
 /* -------------------------------------------------------------------------- */
+.medical-derm-aesthetics {
+  position: relative;
+
+  .containerish {
+    display: grid;
+
+    .section-info {
+      position: absolute;
+      // bottom: 20%;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 90%;
+      max-width: 480px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: stretch;
+      z-index: 10;
+
+      .header-box {
+        border: 1px solid white;
+        padding: .5rem .5rem .7rem .5rem;
+        margin-bottom: 1rem;
+
+        h3 {
+          text-align: center;
+        }
+      }
+
+      .learn-more {
+        align-self: center;
+      }
+    }
+
+    .col-left {
+      position: relative;
+
+      img {
+        object-fit: cover;
+      }
+
+      .section-info {
+        bottom: 20%;
+      }
+    }
+
+    .col-right {
+      position: relative;
+
+      img {
+        object-fit: cover;
+      }
+
+      .section-info {
+        bottom: 5%;
+      }
+    }
+  }
+
+  .medical-circle {
+    width: 126px;
+    height: 126px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
 
 /* -------------------------------------------------------------------------- */
 /* EVENT SECTION */

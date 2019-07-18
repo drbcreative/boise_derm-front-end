@@ -9,3 +9,23 @@
     color: $color-dark;
   }
 }
+
+.learn-more {
+  font-family: $font-primary;
+  font-size: 15px;
+  font-weight: 700;
+  color: $color-white;
+  transition: all .3s ease-in-out;
+
+  &:hover {
+    color: $color-main !important;
+    text-decoration: none;
+    transition: all .3s ease-in-out;
+  }
+
+  &::after {
+    content: url('../../img/learnmore-arrow.png');
+    vertical-align: middle;
+    margin-left: .5rem;
+  }
+}
