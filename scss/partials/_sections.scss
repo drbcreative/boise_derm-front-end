@@ -267,6 +267,28 @@ section {
 /* -------------------------------------------------------------------------- */
 /* BODY SECTION */
 /* -------------------------------------------------------------------------- */
+.body {
+  background: url('../../img/body-bg@2x.jpg') center / cover;
+  overflow: visible;
+
+  .containerish {
+    display: grid;
+
+    img {
+      position: relative;
+      top: -20px;
+      width: 90%;
+      max-width: 400px;
+      height: auto;
+      align-self: center;
+      justify-self: center;
+    }
+
+    .section-info {
+      padding: 10px 20px 40px 20px;
+    }
+  }
+}
 
 /* -------------------------------------------------------------------------- */
 /* SKIN CARE SECTION */
