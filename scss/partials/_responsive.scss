@@ -109,6 +109,33 @@
 
   /* HERO ******************************************************************* */
   /* SEARCH ***************************************************************** */
+  .search {
+    // background: $color-light;
+    padding: 40px 20px;
+
+    .containerish {
+      display: grid;
+      grid-template-columns: max-content 1fr max-content;
+      grid-gap: 1rem;
+      align-items: center;
+
+      .form-control {
+        border-radius: 0;
+        margin-bottom: 0;
+      }
+
+      .form-control:not(button) {
+        border: 1px solid #ededed;
+      }
+
+      ::placeholder {
+        color: #3e3a42;
+        font-family: $font-primary;
+        font-size: 15px;
+      }
+    }
+  }
+
   /* MEDICAL DERM AND AESTHETICS ******************************************** */
   /* EVENT ****************************************************************** */
   /* BOTOX  ***************************************************************** */
