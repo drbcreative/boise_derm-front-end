@@ -343,3 +343,44 @@ section {
 /* -------------------------------------------------------------------------- */
 /* REQUEST APPT. SECTION */
 /* -------------------------------------------------------------------------- */
+.appointments {
+  background: url("../../img/appointments-bg@2x.jpg") center / cover;
+  min-height: 400px;
+  padding: 40px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .appointment-wrapper {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    #appointment-form {
+      background: rgba($color-white, 0.90);
+      min-height: 200px;
+      width: 100%;
+      max-width: 855px;
+      padding: 2rem 1rem;
+
+      .form-control {
+        border-radius: 0;
+      }
+
+      input:not(:last-child) {
+        margin-bottom: 0.5rem;
+      }
+    }
+
+    .care-logo {
+      margin-top: 3rem;
+      max-width: 400px;
+    }
+
+    #financing {
+      margin: 2rem 0 2rem 0;
+    }
+  }
+}
