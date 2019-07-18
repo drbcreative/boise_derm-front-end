@@ -293,6 +293,19 @@ section {
 /* -------------------------------------------------------------------------- */
 /* SKIN CARE SECTION */
 /* -------------------------------------------------------------------------- */
+.skincare {
+  background: url('../../img/skincare-bg@2x.jpg') center / cover;
+  position: relative;
+
+  .section__overlay {
+    background: rgba($color-main, .70);
+    padding: 2rem;
+
+    .containerish {
+      display: flex;
+    }
+  }
+}
 
 /* -------------------------------------------------------------------------- */
 /* BIO SECTION */
