@@ -174,10 +174,42 @@ section {
 /* -------------------------------------------------------------------------- */
 /* BOTOX SECTION */
 /* -------------------------------------------------------------------------- */
+.botox {
+  background: $color-light;
+  overflow: visible;
+
+  .containerish {
+    background: url('../../img/botox-bg@2x.jpg') center / cover;
+    display: grid;
+
+    .section-info {
+      background: rgba($color-main, .85);
+      padding: 1rem;
+    }
+  }
+}
 
 /* -------------------------------------------------------------------------- */
 /* FILLERS SECTION */
 /* -------------------------------------------------------------------------- */
+.fillers {
+  background: $color-light;
+  overflow: visible;
+
+  .ui-btn-white {
+    color: $color-light-accent;
+  }
+
+  .containerish {
+    background: url('../../img/footer-face-bg@2x.jpg') center / cover;
+    display: grid;
+
+    .section-info {
+      background: rgba($color-light-accent, .85);
+      padding: 1rem;
+    }
+  }
+}
 
 /* -------------------------------------------------------------------------- */
 /* SKIN CARE FOR EVERY AGE SECTION */
