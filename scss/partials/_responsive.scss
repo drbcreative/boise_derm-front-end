@@ -163,6 +163,27 @@
   /* SKIN CARE FOR EVERY AGE ************************************************ */
   /* TESTIMONIAL SECTION **************************************************** */
   /* FACE ******************************************************************* */
+  .face {
+
+    .containerish {
+      display: grid;
+      grid-template-columns: 90%;
+      justify-content: center;
+
+      img {
+        position: relative;
+        top: -20px;
+        width: 90%;
+        max-width: 400px;
+        height: auto;
+      }
+
+      .section-info {
+        padding: 10px 20px 40px 20px;
+      }
+    }
+  }
+
   /* BODY ******************************************************************* */
   /* SKIN CARE  ************************************************************* */
   /* BIO ******************************************************************** */
@@ -329,6 +350,34 @@
   /* SKIN CARE FOR EVERY AGE ************************************************ */
   /* TESTIMONIAL SECTION **************************************************** */
   /* FACE ******************************************************************* */
+  .face {
+
+    .containerish {
+      display: grid;
+      grid-template-columns: 1.5fr 1fr;
+      justify-content: center;
+      // align-items: center;
+      position: relative;
+      height: 450px;
+
+      img {
+        position: absolute;
+        top: -53px;
+        width: 100%;
+        max-width: 600px;
+        height: auto;
+        grid-column: 2;
+        grid-row: 1;
+      }
+
+      .section-info {
+        padding: 4rem 3rem;
+        grid-column: 1;
+        grid-row: 1;
+      }
+    }
+  }
+
   /* BODY ******************************************************************* */
   /* SKIN CARE  ************************************************************* */
   /* BIO ******************************************************************** */
@@ -523,6 +572,33 @@
   /* SKIN CARE FOR EVERY AGE ************************************************ */
   /* TESTIMONIAL SECTION **************************************************** */
   /* FACE ******************************************************************* */
+  .face {
+
+    .containerish {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      justify-content: center;
+      position: relative;
+      height: 650px;
+
+      img {
+        position: absolute;
+        top: -36px;
+        width: 90%;
+        max-width: 600px;
+        height: auto;
+        grid-column: 2;
+        grid-row: 1;
+      }
+
+      .section-info {
+        padding: 4rem 3rem;
+        grid-column: 1;
+        grid-row: 1;
+      }
+    }
+  }
+
   /* BODY ******************************************************************* */
   /* SKIN CARE  ************************************************************* */
   /* BIO ******************************************************************** */
