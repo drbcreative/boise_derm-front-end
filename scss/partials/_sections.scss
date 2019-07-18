@@ -214,10 +214,29 @@ section {
 /* -------------------------------------------------------------------------- */
 /* SKIN CARE FOR EVERY AGE SECTION */
 /* -------------------------------------------------------------------------- */
+.skincareforevery {
+  padding: 5rem 20px;
+}
 
 /* -------------------------------------------------------------------------- */
 /* TESTIMONIAL SECTION */
 /* -------------------------------------------------------------------------- */
+.testimonial {
+  background: url('../../img/testimonials-bg@2x.jpg') center / cover;
+  padding: 40px 20px;
+
+  .containerish {
+    height: 40vh;
+    max-height: 380px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .section-info {
+      text-align: center;
+    }
+  }
+}
 
 /* -------------------------------------------------------------------------- */
 /* FACE SECTION */
