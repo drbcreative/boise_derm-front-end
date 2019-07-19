@@ -176,22 +176,67 @@ header {
 }
 
 .dropdown-menu {
-  background-color: rgba($color-main, 1);
+  background-color: rgba($color-main, .95);
   border-color: transparent;
   margin-top: 0 !important;
+  padding-left: 1rem;
 
   .dropdown-item {
+    padding-left: 0;
+    font-family: $font-primary;
+    font-size: 1rem;
+    position: relative;
+
     color: $color-light;
     font-family: $font-primary;
     font-weight: 400;
+    font-size: 1rem;
 
     &:hover {
       background-color: transparent;
-      color: $color-light-accent;
+      color: $color-dark-accent;
     }
 
     &:focus {
       background: transparent;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.mega-menu-header {
+  font-family: $font-primary;
+  font-size: 24px;
+  font-weight: 700;
+  color: $color-white;
+  margin-bottom: .5rem;
+}
+
+.mega-menu-list {
+  padding: 0;
+  margin: 0;
+
+  .dropdown-item {
+    padding-left: 0;
+    font-family: $font-primary;
+    font-size: 1rem;
+    position: relative;
+
+    &::before {
+      content: '•';
+      margin-right: .3rem;
+    }
+
+    a {
+      color: $color-white;
+
+      &:hover {
+        color: $color-dark-accent;
+        text-decoration: none;
+      }
     }
   }
 }
@@ -204,7 +249,8 @@ header {
 @media screen and (min-width: 1200px) {
   .dropdown-menu.mega-menu {
     min-width: 100%;
-    left: -200%;
+    right: -300px;
+    left: auto;
 
     .containerish {
       // width: 500px;
@@ -212,6 +258,43 @@ header {
       grid-template-columns: repeat(3, 1fr);
       grid-gap: 6rem;
       padding: 1rem 3rem;
+
+      // .mega-menu-header {
+      //   font-family: $font-primary;
+      //   font-size: 24px;
+      //   font-weight: 700;
+      //   color: $color-white;
+      // }
+
+      // .mega-menu-list {
+      //   padding: 0;
+
+      //   .dropdown-item {
+      //     padding-left: 0;
+      //     font-family: $font-primary;
+      //     font-size: 1rem;
+      //     position: relative;
+
+      //     &::before {
+      //       content: '•';
+      //       margin-right: .3rem;
+      //     }
+
+      //     a {
+      //       color: $color-white;
+
+      //       &:hover {
+      //         color: $color-dark-accent;
+      //         text-decoration: none;
+      //       }
+      //     }
+
+      //   }
+      // }
+
+      .col-left {
+        // background: red;
+      }
 
       .col-middle {
         justify-self: center;
