@@ -289,6 +289,75 @@
       #appointment-form {}
     }
   }
+
+  /* FOOTER *******************************************************************/
+  .footer1 {
+
+    .containerish {
+      display: grid;
+
+      .col-left {
+        padding: 40px 2rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 1rem;
+
+        .map {
+          grid-row: 1;
+          grid-column: 1;
+        }
+
+        .small-copy {
+          grid-row: 1;
+          grid-column: 1;
+          align-self: flex-end;
+        }
+
+        .section-info {
+          grid-row: 1;
+          grid-column: 2;
+          justify-self: center;
+        }
+      }
+
+      .col-right {
+        padding: 40px 2rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 1rem;
+
+        .newsletter {
+          grid-row: 1;
+          grid-column: 1;
+        }
+
+        .section-info {
+          margin-top: 0;
+        }
+      }
+    }
+  }
+
+  .footer2 {
+    padding: 0 2rem;
+
+    .containerish {
+      display: grid;
+      grid-template-rows: 1;
+      grid-template-columns: max-content 1fr max-content;
+      align-items: center;
+
+      .foot-left {
+        display: block;
+      }
+
+      .foot-middle {}
+
+      .foot-right {
+        display: block;
+      }
+    }
+  }
 }
 
 /* -------------------------------------------------------------------------- */
@@ -923,6 +992,60 @@
       margin: 0 auto;
     }
   }
+
+  /* FOOTER *******************************************************************/
+  .footer1 {
+
+    .containerish {
+      display: grid;
+      grid-template-columns: 1.5fr 1fr;
+      grid-gap: 1rem;
+
+      .col-left {
+        padding: 40px 2rem;
+        display: grid;
+        grid-template-columns: 1.5fr 1fr;
+        grid-gap: 1rem;
+
+        .map {
+          grid-row: 1;
+          grid-column: 1;
+        }
+
+        .small-copy {
+          grid-row: 1;
+          grid-column: 1;
+          align-self: flex-end;
+        }
+
+        .section-info {
+          grid-row: 1;
+          grid-column: 2;
+          justify-self: center;
+        }
+      }
+
+      .col-right {
+        padding: 40px 2rem;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 2rem;
+
+        .newsletter {
+          grid-row: 1;
+          grid-column: 1;
+
+          input {
+            max-width: 250px;
+          }
+        }
+
+        .section-info {
+          margin-top: 0;
+        }
+      }
+    }
+  }
 }
 
 /* -------------------------------------------------------------------------- */
@@ -965,6 +1088,59 @@
   /* SKIN CARE  ************************************************************* */
   /* BIO ******************************************************************** */
   /* REQUEST APPT. ********************************************************** */
+  /* FOOTER ***************************************************************** */
+  .footer1 {
+
+    .containerish {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      grid-gap: 2rem;
+
+      .col-left {
+        padding: 40px 2rem;
+        display: grid;
+        grid-template-columns: 20% 1.5fr 1fr;
+        grid-gap: 1rem;
+
+        .map {
+          grid-row: 1;
+          grid-column: 2;
+        }
+
+        .small-copy {
+          grid-row: 1;
+          grid-column: 2;
+          align-self: flex-end;
+        }
+
+        .section-info {
+          grid-row: 1;
+          grid-column: 3;
+          justify-self: center;
+        }
+      }
+
+      .col-right {
+        padding: 40px 2rem;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 2rem;
+
+        .newsletter {
+          grid-row: 1;
+          grid-column: 1;
+
+          input {
+            max-width: 250px;
+          }
+        }
+
+        .section-info {
+          margin-top: 0;
+        }
+      }
+    }
+  }
 }
 
 /* -------------------------------------------------------------------------- */

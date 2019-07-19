@@ -278,6 +278,17 @@
 		"oT": 1,
 		"q": 100
 		},
+	"/img/map.jpg": {
+		"ft": 16384,
+		"iS": 17909,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/img/map.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
 	"/img/map@2x.jpg": {
 		"ft": 16384,
 		"iS": 65060,
@@ -286,7 +297,7 @@
 		"oAP": "/img/map@2x.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/img/medical-aesthetics-img@2x.jpg": {

@@ -5,64 +5,65 @@
 /* FOOTER 1 SECTION */
 /* -------------------------------------------------------------------------- */
 .footer1 {
-  min-height: 300px;
-
   .footer-link {
-    color: $color-dark-accent;
+    color: $color-white;
     font-family: $font-primary;
-    font-weight: 300;
-    font-size: 15px;
-    line-height: 20px;
+    font-size: 1rem;
+    line-height: 1.5rem;
 
     &:hover {
+      color: $color-light-accent;
       text-decoration: none;
-      color: $color-main;
     }
   }
-  .footer-header {
-    margin-top: 0 !important;
+
+  .footer-copy {
+    color: $color-white;
+    font-family: $font-primary;
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .quick-link {
+    color: $color-main;
+    font-family: $font-primary;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    display: inline-block;
+
+    &:hover {
+      color: $color-light-accent;
+      text-decoration: none;
+    }
+  }
+
+  .quick-link--separator {
+    display: inline-block;
+    height: 7px;
+    width: 7px;
+    background: $color-main;
+    border-radius: 50%;
+    margin: 0 .5rem;
+    vertical-align: middle;
   }
 
   .containerish {
     display: grid;
+    max-width: 100%;
 
-    .footer-left {
-      background: $color-white;
-      padding: 40px 20px;
-
-      .footer-header {
-        margin-bottom: 2rem !important;
-      }
-
-      .ui-btn {
-        display: inline-block;
-        width: auto;
-        padding: 0.2rem 1rem;
-        margin-bottom: 0 !important;
-        vertical-align: middle;
-      }
-    }
-    .footer-right {
-      background: url("../img/footer-right-bg@2x.jpg") center / cover;
-      padding: 40px 20px;
+    .col-left {
+      background: url('../../img/footer-green-bg@2x.jpg') center / cover;
+      padding: 40px 2rem;
       display: grid;
+      grid-gap: 1rem;
+    }
 
-      .footer-header {
-        margin-bottom: 2rem !important;
-      }
+    .col-right {
+      background: url('../../img/footer-face-bg@2x.jpg') center / cover;
+      padding: 40px 2rem;
 
-      .right-left {
-        margin-bottom: 2rem;
-      }
-      .right-right {
-        ul {
-          padding: 0;
-          list-style-type: none;
-
-          li:not(:last-child) {
-            line-height: 40px !important;
-          }
-        }
+      .section-info {
+        margin-top: 3rem;
       }
     }
   }
@@ -72,49 +73,45 @@
 /* FOOTER 2 SECTION */
 /* -------------------------------------------------------------------------- */
 .footer2 {
-  background-color: $color-dark-accent;
+  background-color: $color-light;
   width: 100%;
-  padding: 0.6rem 30px;
+  // padding: 0.6rem 30px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+
+  .footer-2-copy {
+    font-family: $font-primary;
+    font-size: 15px;
+    font-weight: 300;
+    color: $color-text-grey;
+    padding: 0;
+    margin: 0;
+  }
+
+  .footer-2-link {
+    @extend .footer-2-copy;
+
+    &:hover {
+      color: $color-light-accent;
+      text-decoration: none;
+    }
+  }
 
   .containerish {
-    max-width: 100%;
-    padding: 0 0.2rem;
     display: grid;
+    grid-template-rows: 1;
+    align-items: center;
+    max-width: 100%;
 
     .foot-left {
-      display: flex;
-      align-items: center;
-
-      p {
-        display: inline-block;
-      }
+      display: none;
     }
 
-    .social-link {
-      color: $color-white;
-      margin-right: 0.5rem;
+    // .foot-middle {}
 
-      &:hover {
-        text-decoration: none;
-        color: $color-dark;
-      }
-    }
-    .social-link:last-child {
-      margin-right: 0;
-    }
-
-    .footer-link {
-      color: $color-white;
-      font-family: $font-primary;
-      font-size: 15px;
-      line-height: 20px;
-      font-weight: 300;
-      display: inline-block;
-
-      &:hover {
-        text-decoration: none;
-        color: $color-dark;
-      }
+    .foot-right {
+      display: none;
     }
   }
 }
