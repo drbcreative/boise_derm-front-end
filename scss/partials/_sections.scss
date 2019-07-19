@@ -181,6 +181,11 @@ section {
   .containerish {
     background: url('../../img/botox-bg@2x.jpg') center / cover;
     display: grid;
+    position: relative;
+
+    .models-text {
+      color: $color-dark-accent;
+    }
 
     .section-info {
       background: rgba($color-main, .85);
@@ -203,6 +208,12 @@ section {
   .containerish {
     background: url('../../img/footer-face-bg@2x.jpg') center / cover;
     display: grid;
+    position: relative;
+
+    .models-text {
+      color: $color-light;
+      left: 1%;
+    }
 
     .section-info {
       background: rgba($color-light-accent, .85);

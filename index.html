@@ -44,56 +44,95 @@
     <!-- /topbar -->
 
     <!-- navbar -->
-    <!-- Mobile Nav Toggle -->
-    <div class="mobile-nav-toggle">
+    <section class="navbar-wrapper">
       <div class="containerish">
-        <img src="img/logo@2x.png" alt="" class="mobile-logo">
-        <div class="menu-toggle">
-          <div class="toggle-line"></div>
-          <div class="toggle-line"></div>
-          <div class="toggle-line"></div>
-        </div>
-      </div>
-    </div>
-    <!-- /Mobile Nav Toggle -->
+        <nav class="navbar navbar-expand-xl navbar-light px-0">
+          <a class="navbar-brand" href="#">
+            <img src="img/logo@2x.png" class="nav-logo" alt="">
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav"
+            aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
 
-    <!-- Main Nav -->
-    <!-- <div class="main-nav-wrapper">
-      <div class="containerish">
-        <div class="logo">
-          <img src="img/logo@2x.png" alt="" class="main-logo">
-        </div>
-        <div class="main-menu">
-          <a href="#" class="menu-link">ABOUT US</a>
-          <span class="menu-link drop-link" id="1">
-            <a href="#" class="menu-link">DERMATOLOGY CONCERNS</a>
-            <div class="drop-menu">
-              <a href="#" class="drop-menu-link">SUB LINK</a>
-              <a href="#" class="drop-menu-link">SUB LINK</a>
-              <a href="#" class="drop-menu-link">SUB LINK</a>
-              <a href="#" class="drop-menu-link">SUB LINK</a>
-              <a href="#" class="drop-menu-link">SUB LINK</a>
+          <div class="collapse navbar-collapse" id="main-nav">
+            <div class="navbar-nav ml-auto px-0">
+              <span class="nav-item">
+                <a href="#" class="nav-link" role="button">ABOUT US</a>
+              </span>
+              <span class="nav-item nav-divider d-none d-lg-inline-flex"></span>
+              <span class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" id="aboutdown" role="button"
+                  data-toggle="dropdown">CONCERNS</a>
+                <div class="dropdown-menu">
+                  <a href="#" class="dropdown-item">Sub-Link</a>
+                  <a href="#" class="dropdown-item">Sub-Link</a>
+                  <a href="#" class="dropdown-item">Sub-Link</a>
+                  <a href="#" class="dropdown-item">Sub-Link</a>
+                  <a href="#" class="dropdown-item">Sub-Link</a>
+                </div>
+              </span>
+              <span class="nav-item nav-divider d-none d-lg-inline-flex"></span>
+              <span class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" id="aboutdown" role="button" data-toggle="dropdown">MEDICAL
+                  DERMATOLOGY</a>
+                <div class="dropdown-menu">
+                  <a href="#" class="dropdown-item">Sub-Link</a>
+                  <a href="#" class="dropdown-item">Sub-Link</a>
+                  <a href="#" class="dropdown-item">Sub-Link</a>
+                  <a href="#" class="dropdown-item">Sub-Link</a>
+                  <a href="#" class="dropdown-item">Sub-Link</a>
+                </div>
+              </span>
+              <span class="nav-item nav-divider d-none d-lg-inline-flex"></span>
+              <span class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" id="aboutdown" role="button" data-toggle="dropdown">MEDICAL
+                  AESTHETICS</a>
+                <div class="dropdown-menu mega-menu">
+                  <div class="containerish">
+                    <div class="col-left">
+                      <a href="#" class="dropdown-item">Sub-Link</a>
+                      <a href="#" class="dropdown-item">Sub-Link</a>
+                      <a href="#" class="dropdown-item">Sub-Link</a>
+                      <a href="#" class="dropdown-item">Sub-Link</a>
+                      <a href="#" class="dropdown-item">Sub-Link</a>
+                    </div>
+                    <div class="col-middle">
+                      <a href="#" class="dropdown-item">Sub-Link</a>
+                      <a href="#" class="dropdown-item">Sub-Link</a>
+                      <a href="#" class="dropdown-item">Sub-Link</a>
+                      <a href="#" class="dropdown-item">Sub-Link</a>
+                      <a href="#" class="dropdown-item">Sub-Link</a>
+                    </div>
+                    <div class="col-right">
+                      <a href="#" class="dropdown-item">Sub-Link</a>
+                      <a href="#" class="dropdown-item">Sub-Link</a>
+                      <a href="#" class="dropdown-item">Sub-Link</a>
+                      <a href="#" class="dropdown-item">Sub-Link</a>
+                      <a href="#" class="dropdown-item">Sub-Link</a>
+                    </div>
+                  </div>
+                </div>
+              </span>
+              <span class="nav-item nav-divider d-none d-lg-inline-flex"></span>
+              <span class="nav-item">
+                <a href="#" class="nav-link" role="button">PATIENT RESOURCES</a>
+              </span>
+              <span class="nav-item nav-divider d-none d-lg-inline-flex"></span>
+              <span class="nav-item">
+                <a href="#" class="nav-link" role="button">REQUEST CONSUlTATION</a>
+              </span>
+              <span class="nav-item nav-divider d-none d-lg-inline-flex"></span>
+              <span class="nav-item">
+                <a href="#" class="nav-link" role="button">CONTACT</a>
+              </span>
             </div>
-          </span>
-          <span class="menu-link drop-link" id="2">
-            <a href="#" class="menu-link">MEDICAL DERMATOLOGY</a>
-            <div class="drop-menu">
-              <a href="#" class="drop-menu-link">SUB LINK</a>
-              <a href="#" class="drop-menu-link">SUB LINK</a>
-              <a href="#" class="drop-menu-link">SUB LINK</a>
-              <a href="#" class="drop-menu-link">SUB LINK</a>
-              <a href="#" class="drop-menu-link">SUB LINK</a>
-            </div>
-          </span>
-          <a href="#" class="menu-link">MEDICAL AESTHETICS</a>
-          <a href="#" class="menu-link">PATIENT RESOURCES</a>
-          <a href="#" class="menu-link">REQUEST APPOINTMENT</a>
-          <a href="#" class="menu-link">CONTACT US</a>
-        </div>
+          </div>
+        </nav>
       </div>
-    </div> -->
-    <!-- /Main Nav -->
+    </section>
     <!-- /navbar -->
+
   </header>
 
   <main>
@@ -181,7 +220,9 @@
 
     <!-- botox -->
     <section class="botox">
+
       <div class="containerish">
+        <p class="models-text">*model</p>
         <div class="section-info">
           <h2 class="color-white">BOTOX</h2>
           <p class="body-copy color-white mt-3 mb-4">
@@ -201,6 +242,7 @@
     <!-- fillers -->
     <section class="fillers">
       <div class="containerish">
+        <p class="models-text">*model</p>
         <div class="section-info">
           <h2 class="color-white">FILLERS</h2>
           <p class="body-copy color-white mt-3 mb-4">
