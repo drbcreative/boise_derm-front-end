@@ -123,7 +123,7 @@
     background: $color-light;
 
     .containerish {
-      background: url('../../img/botox-bg@2x.jpg') center / cover;
+      background: url('../img/botox-bg@2x.jpg') center / cover;
       display: grid;
 
       .section-info {
@@ -144,7 +144,7 @@
     background: $color-light;
 
     .containerish {
-      background: url('../../img/fillers-bg@2x.jpg') center / cover;
+      background: url('../img/fillers-bg@2x.jpg') center / cover;
       display: grid;
 
       .section-info {
@@ -208,7 +208,7 @@
 
   /* SKIN CARE  ************************************************************* */
   .skincare {
-    background: url('../../img/skincare-bg@2x.jpg') center / cover;
+    background: url('../img/skincare-bg@2x.jpg') center / cover;
     position: relative;
     overflow: visible;
     height: 600px;
@@ -280,15 +280,6 @@
   }
 
   /* REQUEST APPT. ********************************************************** */
-  .appointments {
-    padding: 4rem;
-
-    .appointment-wrapper {
-      max-width: 860px;
-
-      #appointment-form {}
-    }
-  }
 
   /* FOOTER *******************************************************************/
   .footer1 {
@@ -460,7 +451,7 @@
 
       .col-left {
         height: 50vh;
-        background: url('../../img/event-img@2x.jpg') center / cover;
+        background: url('../img/event-img@2x.jpg') center / cover;
         position: relative;
 
         img {
@@ -469,7 +460,7 @@
       }
 
       .col-right {
-        background: url('../../img/event-face-bg@2x.jpg') center / cover;
+        background: url('../img/event-face-bg@2x.jpg') center / cover;
         text-align: left;
         padding-left: 2rem;
       }
@@ -482,7 +473,7 @@
     padding: 4rem 0 2rem 0;
 
     .containerish {
-      background: url('../../img/botox-bg@2x.jpg') center / cover;
+      background: url('../img/botox-bg@2x.jpg') center / cover;
       display: grid;
       grid-template-columns: 1.5fr 1fr;
       height: 45vh;
@@ -501,7 +492,7 @@
     padding: 1rem 0 4rem 0;
 
     .containerish {
-      background: url('../../img/fillers-bg@2x.jpg') center / cover;
+      background: url('../img/fillers-bg@2x.jpg') center / cover;
       display: grid;
       grid-template-columns: 1fr 1.5fr;
       height: 45vh;
@@ -654,11 +645,42 @@
 
   /* REQUEST APPT. ********************************************************** */
   .appointments {
-    padding: 6rem 8rem;
+    background: url("../img/appointments-bg@2x.jpg") center / cover;
+    min-height: 400px;
+    padding: 40px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
     .appointment-wrapper {
-      max-width: 860px;
-      margin: 0 auto;
+      background: rgba($color-white, 0.90);
+      padding: 2rem 8%;
+      max-width: 865px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-column-gap: 2rem;
+      grid-row-gap: 1rem;
+
+      .form-copy {
+        grid-row: 1;
+        grid-column: 1 / -1;
+        justify-self: center;
+        text-align: center;
+      }
+
+      .form-control {
+        border-radius: 0;
+      }
+
+      input:not(:last-child) {
+        margin-bottom: 0.5rem;
+      }
+
+      button {
+        grid-row: 5;
+        grid-column: 1 / -1 !important;
+        justify-self: center;
+      }
     }
   }
 }
@@ -725,7 +747,7 @@
 
       .col-left {
         height: 50vh;
-        background: url('../../img/event-img@2x.jpg') center / cover;
+        background: url('../img/event-img@2x.jpg') center / cover;
         position: relative;
 
         img {
@@ -734,7 +756,7 @@
       }
 
       .col-right {
-        background: url('../../img/event-face-bg@2x.jpg') center / cover;
+        background: url('../img/event-face-bg@2x.jpg') center / cover;
         padding: 2rem 4rem;
 
       }
@@ -747,7 +769,7 @@
     padding: 6rem 0 2rem 0;
 
     .containerish {
-      background: url('../../img/botox-bg@2x.jpg') center / cover;
+      background: url('../img/botox-bg@2x.jpg') center / cover;
       display: grid;
       grid-template-columns: 1fr 1fr;
       align-items: center;
@@ -768,7 +790,7 @@
     padding: 1rem 0 6rem 0;
 
     .containerish {
-      background: url('../../img/fillers-bg@2x.jpg') center / cover;
+      background: url('../img/fillers-bg@2x.jpg') center / cover;
       display: grid;
       grid-template-columns: 1fr 1fr;
       height: 60vh;
@@ -934,7 +956,7 @@
     .containerish {
       display: grid;
       grid-template-columns: 1.5fr 1fr;
-      grid-gap: 1rem;
+      grid-gap: 0;
 
       .col-left {
         padding: 40px 2rem;
@@ -998,7 +1020,7 @@
 
       .col-left {
         height: 40vh;
-        background: url('../../img/event-img@2x.jpg') center / cover;
+        background: url('../img/event-img@2x.jpg') center / cover;
         position: relative;
 
         img {
@@ -1007,7 +1029,7 @@
       }
 
       .col-right {
-        background: url('../../img/event-face-bg@2x.jpg') center / cover;
+        background: url('../img/event-face-bg@2x.jpg') center / cover;
         padding: 2rem 4rem;
 
       }
@@ -1029,7 +1051,7 @@
     .containerish {
       display: grid;
       grid-template-columns: 2fr 1fr;
-      grid-gap: 2rem;
+      grid-gap: 0;
 
       .col-left {
         padding: 40px 2rem;

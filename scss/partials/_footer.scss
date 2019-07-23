@@ -52,15 +52,21 @@
     max-width: 100%;
 
     .col-left {
-      background: url('../../img/footer-green-bg@2x.jpg') center / cover;
+      background: url('../img/footer-green-bg@2x.jpg') center / cover;
       padding: 40px 2rem;
       display: grid;
       grid-gap: 1rem;
     }
 
     .col-right {
-      background: url('../../img/footer-face-bg@2x.jpg') center / cover;
+      background: url('../img/footer-face-bg@2x.jpg') center / cover;
       padding: 40px 2rem;
+
+      .newsletter {
+        .form-control {
+          border-radius: 0;
+        }
+      }
 
       .section-info {
         margin-top: 3rem;

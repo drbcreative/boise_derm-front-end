@@ -1,0 +1,95 @@
+.db__carousel {
+  position: relative;
+  height: auto;
+  width: 90%;
+  margin: 0 auto;
+
+  @media screen and (min-width: 1400px) {
+    width: 100%;
+  }
+
+  .carousel__track-container {
+    // background: lightgreen;
+    height: 500px;
+    position: relative;
+    overflow: hidden;
+
+    .carousel__track {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      height: 100%;
+      transition: transform 550ms ease-out;
+    }
+  }
+
+  .carousel__slide {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+
+    .carousel__image {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+
+  .carousel__button {
+    position: absolute;
+    top: 25%;
+    // transform: translateY(-50%);
+    cursor: pointer;
+    height: 93px;
+    width: 101px;
+    z-index: 90;
+
+    &.carousel__button--right {
+      right: -50px;
+
+      &::before {
+        content: ">";
+        color: #fff;
+        font-size: 100%;
+        line-height: 100%;
+      }
+    }
+
+    &.carousel__button--left {
+      left: -50px;
+
+      &::before {
+        content: "<";
+        color: #fff;
+        font-size: 100%;
+        line-height: 100%;
+      }
+    }
+  }
+
+  .carousel__nav {
+    // background: pink;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: flex-start;
+    grid-gap: 2rem;
+    padding: 1rem 0;
+
+    .carousel__indicator {
+      opacity: .3;
+      transition: opacity 250ms ease-in-out;
+      cursor: pointer;
+
+      &.current-slide {
+        opacity: 1;
+        transition: opacity 250ms ease-in-out;
+      }
+    }
+  }
+}
+
+.is-hidden {
+  display: none;
+}

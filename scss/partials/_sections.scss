@@ -17,7 +17,7 @@ section {
 /* HERO SECTION */
 /* -------------------------------------------------------------------------- */
 .hero {
-  background: url('../../img/hero@2x.jpg') center / cover;
+  background: url('../img/hero@2x.jpg') center / cover;
   padding: 20px 20px;
   min-height: 75vh;
   max-height: 740px;
@@ -153,7 +153,7 @@ section {
 
     .col-left {
       height: 50vh;
-      background: url('../../img/event-img@2x.jpg') center / cover;
+      background: url('../img/event-img@2x.jpg') center / cover;
       position: relative;
 
       img {
@@ -162,7 +162,7 @@ section {
     }
 
     .col-right {
-      background: url('../../img/event-face-bg@2x.jpg') center / cover;
+      background: url('../img/event-face-bg@2x.jpg') center / cover;
       padding: 20px 20px;
       text-align: center;
       display: flex;
@@ -179,7 +179,7 @@ section {
   overflow: visible;
 
   .containerish {
-    background: url('../../img/botox-bg@2x.jpg') center / cover;
+    background: url('../img/botox-bg@2x.jpg') center / cover;
     display: grid;
     position: relative;
 
@@ -206,7 +206,7 @@ section {
   }
 
   .containerish {
-    background: url('../../img/footer-face-bg@2x.jpg') center / cover;
+    background: url('../img/footer-face-bg@2x.jpg') center / cover;
     display: grid;
     position: relative;
 
@@ -218,6 +218,16 @@ section {
     .section-info {
       background: rgba($color-light-accent, .85);
       padding: 1rem;
+
+      .ui-btn-group {
+        .ui-btn-white-ol {
+          color: $color-white;
+
+          &:hover {
+            color: $color-white;
+          }
+        }
+      }
     }
   }
 }
@@ -226,14 +236,19 @@ section {
 /* SKIN CARE FOR EVERY AGE SECTION */
 /* -------------------------------------------------------------------------- */
 .skincareforevery {
+  position: relative;
   padding: 5rem 20px;
+  overflow: visible;
+  height: auto;
+
+  @import "db_carousel";
 }
 
 /* -------------------------------------------------------------------------- */
 /* TESTIMONIAL SECTION */
 /* -------------------------------------------------------------------------- */
 .testimonial {
-  background: url('../../img/testimonials-bg@2x.jpg') center / cover;
+  background: url('../img/testimonials-bg@2x.jpg') center / cover;
   padding: 40px 20px;
 
   .containerish {
@@ -253,7 +268,7 @@ section {
 /* FACE SECTION */
 /* -------------------------------------------------------------------------- */
 .face {
-  background: url('../../img/face-bg@2x.jpg') center / cover;
+  background: url('../img/face-bg@2x.jpg') center / cover;
   overflow: visible;
 
   .containerish {
@@ -279,7 +294,7 @@ section {
 /* BODY SECTION */
 /* -------------------------------------------------------------------------- */
 .body {
-  background: url('../../img/body-bg@2x.jpg') center / cover;
+  background: url('../img/body-bg@2x.jpg') center / cover;
   overflow: visible;
 
   .containerish {
@@ -305,7 +320,7 @@ section {
 /* SKIN CARE SECTION */
 /* -------------------------------------------------------------------------- */
 .skincare {
-  background: url('../../img/skincare-bg@2x.jpg') center / cover;
+  background: url('../img/skincare-bg@2x.jpg') center / cover;
   position: relative;
 
   .section__overlay {
@@ -355,7 +370,7 @@ section {
 /* REQUEST APPT. SECTION */
 /* -------------------------------------------------------------------------- */
 .appointments {
-  background: url("../../img/appointments-bg@2x.jpg") center / cover;
+  background: url("../img/appointments-bg@2x.jpg") center / cover;
   min-height: 400px;
   padding: 40px 20px;
   display: flex;
@@ -363,35 +378,22 @@ section {
   justify-content: center;
 
   .appointment-wrapper {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    flex: 1;
+    background: rgba($color-white, 0.90);
+    padding: 2rem 1rem;
+    max-width: 865px;
+    display: grid;
 
-    #appointment-form {
-      background: rgba($color-white, 0.90);
-      min-height: 200px;
-      width: 100%;
-      max-width: 855px;
-      padding: 2rem 1rem;
-
-      .form-control {
-        border-radius: 0;
-      }
-
-      input:not(:last-child) {
-        margin-bottom: 0.5rem;
-      }
+    .form-copy {
+      text-align: center;
     }
 
-    .care-logo {
-      margin-top: 3rem;
-      max-width: 400px;
+    .form-control {
+      border-radius: 0;
     }
 
-    #financing {
-      margin: 2rem 0 2rem 0;
+    input:not(:last-child) {
+      margin-bottom: 0.5rem;
     }
   }
 }

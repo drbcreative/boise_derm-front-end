@@ -110,6 +110,11 @@ header {
     background: rgba($color-white, .8);
   }
 
+  .navbar-expand-xl .navbar-nav .nav-link {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
   .containerish {
     // width: 95%;
     max-width: 100%;
@@ -145,6 +150,10 @@ header {
     &:hover {
       color: $color-light-accent !important;
     }
+
+    @media screen and (min-width: 1200px) {
+      font-weight: 700;
+    }
   }
 }
 
@@ -157,13 +166,13 @@ header {
   position: relative;
 
   &::after {
-    content: "•";
-    color: $color-light;
+    content: "|";
+    color: $color-dark;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    opacity: 0.3;
+    opacity: 0.2;
   }
 }
 

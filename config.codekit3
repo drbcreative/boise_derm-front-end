@@ -61,6 +61,16 @@
 		"oF": 0,
 		"oS": 3
 		},
+	"/css/vendor/db-animate.min-min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/css/vendor/db-animate.min-min-min.css",
+		"oF": 0,
+		"oS": 3
+		},
 	"/css/vendor/db-animate.min.css": {
 		"aP": 1,
 		"bl": 0,
@@ -308,7 +318,7 @@
 		"oAP": "/img/medical-aesthetics-img@2x.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/img/medical-derm-button@2x.png": {
@@ -330,24 +340,44 @@
 		"oAP": "/img/medical-derm-img@2x.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
-	"/img/nextButton.svg": {
+	"/img/next-39-59.svg": {
 		"ft": 2097152,
 		"miP": 0,
 		"oA": 2,
-		"oAP": "/img/nextButton.svg",
+		"oAP": "/img/next-39-59.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 3758088159,
 		"prP": 0
 		},
-	"/img/previousButton.svg": {
+	"/img/next-60.svg": {
 		"ft": 2097152,
 		"miP": 0,
 		"oA": 2,
-		"oAP": "/img/previousButton.svg",
+		"oAP": "/img/next-60.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"/img/prev-18-38.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/img/prev-18-38.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"/img/prev-39-59.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/img/prev-39-59.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 3758088159,
@@ -493,6 +523,17 @@
 		"sC": 3,
 		"tS": 0
 		},
+	"/js/vendor/db-animate.min-min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/js/vendor/db-animate.min-min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
 	"/js/vendor/db-animate.min.js": {
 		"bF": 0,
 		"ft": 64,
@@ -597,6 +638,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/scss/partials/_buttons.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/scss/partials/_db_carousel.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/scss/partials/_db_carousel.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
